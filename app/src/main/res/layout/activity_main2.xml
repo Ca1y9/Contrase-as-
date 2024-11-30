@@ -1,0 +1,111 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#858585">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generador de Contraseñas"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/idea" />
+
+        <EditText
+            android:layout_marginTop="25sp"
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Ingresa tu nombre" />
+
+        <EditText
+            android:id="@+id/favoriteSingerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Ingresa tu cantante favorito" />
+
+        <EditText
+            android:id="@+id/favoriteColorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Ingresa tu color favorito" />
+
+        <EditText
+            android:id="@+id/passwordLengthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Longitud de la contraseña (8-20)"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/upperCaseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Incluir mayúsculas" />
+
+        <CheckBox
+            android:id="@+id/lowerCaseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Incluir minúsculas" />
+
+        <CheckBox
+            android:id="@+id/numbersCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluir números" />
+
+        <CheckBox
+            android:id="@+id/symbolsCheckBox"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Incluir símbolos" />
+
+        <Button
+            android:id="@+id/generateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="Generar Contraseña" />
+
+        <TextView
+            android:id="@+id/generatedPasswordTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña generada aquí"
+            android:paddingTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/copyButton"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            android:text="Copiar Contraseña" />
+
+    </LinearLayout>
+</ScrollView>
